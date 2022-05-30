@@ -1,0 +1,199 @@
+.download-link:hover {
+  cursor: pointer;
+}
+.bannerlogo {
+  width: 50px;
+  height: 40px;
+  padding-right: 10px;
+}
+
+.banner-image {
+  width: 100%;
+  vertical-align: middle;
+  /* border-style: none; */
+}
+
+.dnbtn {
+  border: 2px solid #0ff;
+  border-radius: 50px;
+  position: absolute;
+  color: #0ff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px 0 0 0;
+  width: 50px;
+  height: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.dnbtn:before {
+  font-family: "ionicons";
+  content: "†";
+  font-size: 26px;
+  bottom: -16px;
+  color: #0ff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+.dnbtn:hover:before {
+  display: none;
+}
+
+.dnbtn:hover:after {
+  font-family: Prompt;
+  content: "DOWNLOAD";
+  color: #0ff;
+  font-size: 18px;
+  position: absolute;
+  bottom: -10px;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  animation: fadein 0.3s;
+}
+
+.dnbtn:hover {
+  width: 160px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.pic-ctn {
+  /* width: 100vw;
+  height: 200px; */
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn {
+  /* position: relative; */
+  width: 100%;
+  height: 28rem;
+  margin-top: 0rem;
+}
+
+.pic-ctn > img {
+  position: absolute;
+  width: 13rem;
+  height: 26rem;
+  top: 0;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 25s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 5s;
+}
+img:nth-child(3) {
+  animation-delay: 10s;
+}
+img:nth-child(4) {
+  animation-delay: 15s;
+}
+img:nth-child(5) {
+  animation-delay: 20s;
+}
+
+.appdownload ul {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.appdownload li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.download {
+  width: 11rem;
+  height: 2.7rem;
+  background: black;
+  float: left;
+  border-radius: 5px;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  margin: 1rem;
+  margin-left: 4rem;
+}
+
+.download > .fa {
+  color: #fff;
+  position: absolute;
+  top: 19%;
+  left: 1rem;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+}
+.download > .fa-3x {
+  font-size: 2.4rem;
+}
+
+.df,
+.dfn {
+  position: absolute;
+  left: 4rem;
+}
+
+.df {
+  top: 4px;
+  font-size: 0.7rem;
+}
+
+.dfn {
+  top: 1.1rem;
+  font-size: 1rem;
+}
+
+.download:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
