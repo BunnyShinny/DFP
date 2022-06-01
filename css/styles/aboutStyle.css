@@ -32,7 +32,7 @@ body {
 }
 .site-blocks-cover,
 .site-blocks-cover > .container > .row {
-  min-height: 600px;
+  /* min-height: 600px; */
   height: calc(100vh);
 }
 .site-blocks-cover h1 {
@@ -103,12 +103,33 @@ body {
   position: relative;
 }
 .site-blocks-cover .intro .heading {
-  margin-left: -150px;
-  color: #4644fd;
+  position: absolute;
+  left: -22rem;
+  top: -9rem;
+  margin-left: 0px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  width: auto;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 @media (max-width: 991.98px) {
   .site-blocks-cover .intro .heading {
-    margin-left: 0;
+    margin-left: 0px;
+    position: absolute;
+    left: 0rem;
+    top: -15rem;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
 .site-blocks-cover .intro .text {

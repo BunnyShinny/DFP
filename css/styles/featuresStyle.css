@@ -27,12 +27,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(41, 72, 255);
+  /* background: rgb(41, 72, 255);
   background: linear-gradient(
     177deg,
     rgba(41, 72, 255, 1) 0%,
     rgba(0, 180, 219, 1) 100%
-  );
+  ); */
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
   transition: 0.5s ease-in-out;
 }
