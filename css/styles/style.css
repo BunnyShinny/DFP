@@ -37,7 +37,8 @@ section {
 .section-about {
   color: black;
   /* background-image: url("../../img/background/about.jpg"); */
-  height: 5rem;
+  /* height: 5rem; */
+  overflow: auto;
 }
 .section-features {
   color: #000000;
